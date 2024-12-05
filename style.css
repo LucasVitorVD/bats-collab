@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "Bangers";
+  src: url("./fonts/Bangers-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("./fonts/FontAwesome.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-family: "Bangers";
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: .8rem;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-buttons span {
+  width: 10px;
+  height: 10px;
+  background-color: gainsboro;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-buttons span:nth-child(1) {
+  background-color: gray;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: .9rem 1.5rem;
+  background-color: #22c55e;
+  color: white;
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: yellow;
+}
+
+header figure {
+  width: 100px;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.hero {
+  background-color: yellow;
+}
+
+.hero .hero-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.hero .hero-infos .info-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 70%;
+}
+
+.hero .hero-infos .info-card h1 {
+  text-align: center;
+}
+
+.hero .hero-infos p {
+  font-size: .8rem;
+  text-align: center;
+}
+
+.hero .hero-footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url(./imagem/fundo.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.hero .hero-footer figure {
+  width: 250px;
+  height: auto;
+}
+
+.about-us, .about-us-2, .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.about-us figure {
+  width: 300px;
+  height: auto;
+}
+
+.about-us .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.about-us .infos .highlight-text {
+  font-size: .9rem;
+  font-family: "Bangers";
+}
+
+.about-us-2 {
+  background-color: black;
+  color: white;
+}
+
+.about-us-2 h2 {
+  color: yellow;
+}
+
+.about-us-2 figure {
+  width: 200px;
+  height: auto;
+}
+
+.about-us-2 .infos {
+  padding: 1rem;
+  text-align: center;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: yellow;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.call-to-action h3 {
+  font-size: .9rem;
+  font-family: "Nunito";
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.portfolio p {
+  font-weight: bold;
+  font-family: "Bangers";
+  font-size: 2rem;
+  color: purple;
+}
+
+.partners {
+  background-color: #E5E7E6;
+  padding: 2rem 0px;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.contact h3 {
+  color: yellow;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.contact form input {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: .5rem;
+}
+
+.contact form select {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: black;
+  color: white;
+  font-size: .9rem;
+  padding-bottom: 1.5rem;
+}
